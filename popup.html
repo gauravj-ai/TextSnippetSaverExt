@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quick Text Snippet Saver</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+    }
+    textarea {
+      width: 300px;
+      height: 300px;
+      resize: both;
+      font-size: 14px;
+      padding: 10px;
+    }
+    button {
+      margin: 5px 0;
+    }
+    #alwaysOnTop {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Quick Text Snippet Saver</h1>
+  <textarea id="editor" placeholder="Your saved snippets will appear here..."></textarea>
+  <div>
+   <!-- Section for "This Page Notes" -->
+  <div class="section" style="display: flex; align-items: center; margin-bottom: 20px;">
+  <h2 style="margin: 0; font-size: 16px; font-weight: bold; flex: 1;">This Page Notes</h2>
+  <div class="buttons" style="display: flex; gap: 5px;">
+    <button id="clearPage">Clear</button>
+    <button id="downloadPage">Download</button>
+  </div>
+</div>
+
+  <!-- Section for "All Notes" -->
+  <div class="section" style="display: flex; align-items: center; margin-bottom: 20px;">
+  <h2 style="margin: 0; font-size: 16px; font-weight: bold; flex: 1;">All Notes</h2>
+  <div class="buttons" style="display: flex; gap: 5px;">
+    <button id="clearAll">Clear</button>
+    <button id="downloadAll">Download</button>
+  </div>
+</div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
